@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="quiz-container">
+    <h1>Quiz App</h1>
+    <div id="question"></div>
+    <div id="choices"></div>
+    <button id="next" style="display:none;">Next</button>
+    <div id="score" style="display:none;"></div>
+  </div>
+  <div id="score" style="display:none;"></div>
+
+  <div id="name-input" style="display:none;">
+    <p>Enter your name:</p>
+    <input type="text" id="player-name" placeholder="Your name" />
+    <button onclick="submitScore()">Submit Score</button>
+  </div>
+
+  <div id="leaderboard" style="display:none;">
+    <h2>Leaderboard</h2>
+    <ul id="leaderboard-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
